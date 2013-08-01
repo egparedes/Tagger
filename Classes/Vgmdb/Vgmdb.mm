@@ -478,7 +478,7 @@ string _html;
         else if(!current->data.isTag()){
             string s = current->data.text();
             NSString *prod = [NSString stringWithCppStringTrimmed:&s];
-            if ([prod hasVaildData]){
+            if ([prod hasValidData]){
                 [prods addObject:@{@"english": prod}];
             }
         }
@@ -523,12 +523,12 @@ string _html;
         }else if (!current->data.isTag()){
             string _text = current->data.text();
             NSString *text = [NSString stringWithCppStringTrimmed:&_text];
-            if ([text hasVaildData]){
+            if ([text hasValidData]){
                 NSString *result = [text stringByReplacingOccurrencesOfRegex:@", *" withString:@""];
                 
                 for (NSString *s in [text componentsSeparatedByRegex:@"[,]"]){
                     NSString *ss = [s trimWhiteSpace];
-                    if ([ss hasVaildData] && ![ss isMatchedByRegex:@"^\\("]){
+                    if ([ss hasValidData] && ![ss isMatchedByRegex:@"^\\("]){
                         [arr addObject:@{ @"english" : ss }];
                     }
                 }
@@ -547,7 +547,7 @@ string _html;
             }
             string _text = m->data.text();
             NSString *text = [NSString stringWithCppStringTrimmed:&_text];
-            if ([text hasVaildData]){
+            if ([text hasValidData]){
                 [arr addObject:@{ @"english" : text }];
             }
         }else{
@@ -620,7 +620,7 @@ string _html;
         if (!node->data.isTag()){
             string _title = node->data.text();
             NSString *title = [NSString stringWithCppStringTrimmed:&_title];
-            if([title hasVaildData]){
+            if([title hasValidData]){
                 [titles setValue:[title stringByDecodingXMLEntities] forKey:@"english"];
                 node = node->next_sibling;
                 continue;
@@ -661,7 +661,7 @@ string _html;
             if (titleNode){
                 string _title = titleNode->data.text();
                 NSString *title = [[NSString alloc] initWithCppString:&_title];
-                if ([title hasVaildData]){
+                if ([title hasValidData]){
                     [titles setValue: [title stringByDecodingXMLEntities] forKey:lang];
                 }
             }

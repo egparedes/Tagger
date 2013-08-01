@@ -15,8 +15,8 @@ Install From Source
 * 64 bit only
 
 ### Introductions
-* need taglib headers  e.g with homebrew
-  `brew install taglib`
+* need taglib and htmlcxx headers e.g with homebrew
+  `brew install taglib htmlcxx`
 
 Build the release version of Tagger.
 
@@ -49,6 +49,7 @@ Libraries Used
 * MASPreferencesViewController
 * RegexkitLite
 * hcxslect
+* htmlcxx
 
 Licence
 -------

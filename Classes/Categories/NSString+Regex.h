@@ -10,7 +10,7 @@
 
 @interface NSString (Regex)
 
-- (BOOL) hasVaildData;
+- (BOOL) hasValidData;
 
 - (NSString *)stringByDecodingXMLEntities;
 

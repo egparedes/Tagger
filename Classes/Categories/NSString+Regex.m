@@ -11,7 +11,7 @@
 
 @implementation NSString (Regex)
 
-- (BOOL) hasVaildData
+- (BOOL) hasValidData
 {
     return (self && [self length] != 0 && ![self isMatchedByRegex:@"^[/,.()~\\\\ -\"'\\[\\] :!@]+$"]);
 }
@@ -128,7 +128,7 @@ finish:
 {
     // Make sure its utf-8
     iconv_t ic= iconv_open("UTF-8", "UTF-8");
-    // Remove invaild characters
+    // Remove invalid characters
     int one = 1;
     iconvctl(ic, ICONV_SET_DISCARD_ILSEQ, &one);
     
