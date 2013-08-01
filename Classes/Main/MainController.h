@@ -35,6 +35,7 @@
 	IBOutlet NSMenu *capitaliseMenu;
 	IBOutlet NSMenu *uppercaseMenu;
 	IBOutlet NSMenu *lowercaseMenu;
+	IBOutlet NSMenu *sentencecapitaliseMenu;
 	IBOutlet NSMenu *whitespaceMenu;
 	IBOutlet NSMenu *deleteMenu;
 	IBOutlet NSMenu *swapMenu;
@@ -142,6 +143,7 @@
 - (IBAction)capitalisedTags:(id)sender;
 - (IBAction)uppercaseTags:(id)sender;
 - (IBAction)lowercaseTags:(id)sender;
+- (IBAction)sentencecapitaliseTags:(id)sender;
 - (IBAction)trimWhitespace:(id)sender;
 - (IBAction)deleteTag:(id)sender;
 - (IBAction)deleteAllTags:(id)sender;

@@ -40,6 +40,10 @@
 	<string>${EXECUTABLE_NAME}</string>
 	<key>CFBundleGetInfoString</key>
 	<string></string>
+	<key>CFBundleHelpBookFolder</key>
+	<string>Tagger Help</string>
+	<key>CFBundleHelpBookName</key>
+	<string>Tagger Help</string>
 	<key>CFBundleIconFile</key>
 	<string>Tagger.icns</string>
 	<key>CFBundleIconFiles</key>
@@ -61,7 +65,7 @@
 	<key>CFBundleURLTypes</key>
 	<array/>
 	<key>CFBundleVersion</key>
-	<string>1.6.9</string>
+	<string>1.6.9b</string>
 	<key>LSApplicationCategoryType</key>
 	<string>public.app-category.music</string>
 	<key>LSMinimumSystemVersion</key>
@@ -82,9 +86,5 @@
 	<string>dsa_pub.pem</string>
 	<key>UTExportedTypeDeclarations</key>
 	<array/>
-	<key>CFBundleHelpBookName</key>
-	<string>Tagger Help</string>
-	<key>CFBundleHelpBookFolder</key>
-	<string>Tagger Help</string>
 </dict>
 </plist>

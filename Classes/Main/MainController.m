@@ -13,6 +13,7 @@
 #import "DisplayController.h"
 #import "FileSystemNode.h"
 #import "NSMutableArray+Stack.h"
+#import "NSString+SentenceCaps.h"
 #import "ImageAndTextCell.h"
 #import "FileSystemNodeCollection.h"
 #import "RenamingFilesController.h"
@@ -768,6 +769,14 @@ objectValueForTableColumn:(NSTableColumn *)aTableColumn
 	}];
 }
 
+- (IBAction)sentencecapitaliseTags:(id)sender
+{
+	[self performBlockOnTags:sender tagNames:tagMenuValues block:^id (id value, NSString *tagName, Tags *tags) {
+		return [value sentenceCapitalizedString];
+	}];
+}
+
+
 - (IBAction)trimWhitespace:(id)sender
 {
 	[self performBlockOnTags:sender tagNames:tagMenuValues block:^id (id value, NSString *tagName, Tags *tags) {
@@ -1180,6 +1189,7 @@ objectValueForTableColumn:(NSTableColumn *)aTableColumn
 	makeMenu(tagMenuValues, capitaliseMenu, @selector(capitalisedTags:));
 	makeMenu(tagMenuValues, uppercaseMenu,  @selector(uppercaseTags:));
 	makeMenu(tagMenuValues, lowercaseMenu,  @selector(lowercaseTags:));
+	makeMenu(tagMenuValues, sentencecapitaliseMenu,  @selector(sentencecapitaliseTags:));
 	makeMenu(tagMenuValues, whitespaceMenu, @selector(trimWhitespace:));
 	makeMenu(deleteMenuValues, deleteMenu,  @selector(deleteTag:));
 	makeMenu(swapMenuValues, swapMenu,  @selector(swapFirstAndLastName:));

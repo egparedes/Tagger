@@ -130,6 +130,7 @@
 		92E6EDF713F32B3C0045679E /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92E6EDF613F32B3C0045679E /* Quartz.framework */; };
 		92E6EE3213F35FD50045679E /* QuickLookTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 92E6EE3113F35FD50045679E /* QuickLookTableView.m */; };
 		92F16DB314041D8B0031E4B4 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 92F16DB214041D8B0031E4B4 /* libicucore.dylib */; };
+		BE345D0417AAA93F005E71E4 /* NSString+SentenceCaps.m in Sources */ = {isa = PBXBuildFile; fileRef = BE345D0317AAA93F005E71E4 /* NSString+SentenceCaps.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -323,6 +324,8 @@
 		92F16DB014041AC10031E4B4 /* RegexKitLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegexKitLite.m; sourceTree = "<group>"; };
 		92F16DB214041D8B0031E4B4 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
 		92F2C1E515BC75DF00AF9D78 /* libhcxselect.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libhcxselect.a; sourceTree = "<group>"; };
+		BE345D0217AAA93F005E71E4 /* NSString+SentenceCaps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SentenceCaps.h"; sourceTree = "<group>"; };
+		BE345D0317AAA93F005E71E4 /* NSString+SentenceCaps.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+SentenceCaps.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -626,6 +629,8 @@
 				9254094815C367330074A280 /* NSString+Tag.mm */,
 				92E101F615CDB7FB00882A07 /* NSString+Regex.h */,
 				92E101F715CDB7FB00882A07 /* NSString+Regex.m */,
+				BE345D0217AAA93F005E71E4 /* NSString+SentenceCaps.h */,
+				BE345D0317AAA93F005E71E4 /* NSString+SentenceCaps.m */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -1003,6 +1008,7 @@
 				9254094915C367330074A280 /* NSString+Tag.mm in Sources */,
 				92E101F815CDB7FB00882A07 /* NSString+Regex.m in Sources */,
 				9289122815CF195500FBE113 /* hcxselect.cpp in Sources */,
+				BE345D0417AAA93F005E71E4 /* NSString+SentenceCaps.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
